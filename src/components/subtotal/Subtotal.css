@@ -1,0 +1,62 @@
+.subtotal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    /* height: 100px; */
+    padding: 20px;
+    border-radius: 3px;
+    margin-left: 35px;
+    border: 1px solid rgb(202, 183, 178, 0.3);
+    background-color: white;
+  }
+  
+  .subtotal_gift_text_container {
+      display: flex;
+      gap: 5px;
+      margin-bottom: 0;
+  }
+  
+  .tick__icon {
+      color: green;
+  }
+  .subtotal_gift_text {
+      text-align: justify;
+      font-size: small;
+      font-weight: 500;
+      margin-bottom: 12px;
+  }
+  
+  .subtotal_gift_text_green {
+      color: green;
+  }
+  .subtotal__text {
+      font-weight: 500;
+      margin-bottom: .2rem;
+  }
+  
+  .subtotal__digits {
+    font-weight: 650;
+  }
+  
+  
+  .subtotal__gift {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+  }
+  .proceed__button {
+    background: #f0c14b;
+    border: 1px solid;
+    margin-top: 10px;
+    padding: 0.3rem 1rem;
+    border-radius: 8px;
+    border-color: #ff9900;
+    color: #111;
+    font-weight: 500;
+  }
+  .proceed__button:hover {
+    background-color: #ff9900;
+    cursor: pointer;
+  }
