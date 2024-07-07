@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# Amazon Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a front-end clone of the popular e-commerce platform Amazon, built using React.js and integrated with Firebase authentication and Stripe payment gateway.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **User Authentication**: Utilizes Firebase authentication to allow users to sign up, log in, and log out securely.
+- **Product Listing**: Displays various categories of products, including books/toys, fashion/beauty, and electronics.
+- **Search Functionality**: Includes a search bar in the header to filter products based on user input.
+- **Shopping Cart**: Allows users to add items to their cart and proceed to checkout.
+- **Checkout Process**: Simulates a checkout flow using Stripe for processing payments.
+- **Responsive Design**: Ensures a seamless user experience across desktop and mobile devices.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React.js
+- React Router
+- Firebase (Authentication)
+- Stripe (Payment Processing)
+- HTML5
+- CSS3
+- JavaScript (ES6+)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+To run this project locally, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
 
-### `npm run build`
+   ```bash
+   git clone https://github.com/Amitesh220/Amazon-Clone.git
+   cd amazon-clone
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Install dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Set up Firebase:
+   - Create a Firebase project and set up authentication.
+   - Update the Firebase configuration in `firebase.js` with your project credentials.
 
-### `npm run eject`
+4. Set up Stripe:
+   - Create a Stripe account and obtain your API keys.
+   - Update the Stripe public key in `App.js` with your Stripe public key.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. Start the development server:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   npm start
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+6. Open [http://localhost:3000](http://localhost:3000) in your web browser to view the app.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Folder Structure
 
-## Learn More
+- `src/components`: Contains reusable UI components such as headers, footers, and product cards.
+- `src/pages`: Includes main page components like Home, Login, Signup, and Thank You pages.
+- `src/context`: Manages global state using React Context API and State Provider.
+- `src/firebase.js`: Configures Firebase SDK for authentication.
+- `src/App.js`: Main entry point of the application, defining routes and integrating components.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Contributions are welcome! If you have suggestions, enhancements, or find any issues, please feel free to create an issue or submit a pull request.
 
-### Code Splitting
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
